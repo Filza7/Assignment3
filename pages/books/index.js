@@ -10,10 +10,10 @@ export default function FeaturedEventsPage() {
   useEffect(() => {
     async function fetchBooks() {
       try {
-        const response = await fetch("/api/books"); // Use your existing API route
+        const response = await fetch("/api/books"); 
         const data = await response.json();
         setBooks(data); // Set full list of books
-        setFilteredBooks(data); // Initially, display all books
+        setFilteredBooks(data); 
       } catch (error) {
         console.error("Failed to fetch books:", error);
       } finally {
