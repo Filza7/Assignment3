@@ -7,7 +7,7 @@ function Genre({ list, onGenreChange }) {
     const handleGenreSelect = (genreId) => {
         setSelectedGenre(genreId);
         if (onGenreChange) {
-            onGenreChange(genreId); // Call the onGenreChange function passed as a prop
+            onGenreChange(genreId); 
         }
     };
 
