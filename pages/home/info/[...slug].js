@@ -1,4 +1,4 @@
-// pages/info/[...slug].js
+
 import { useRouter } from 'next/router';
 import React from 'react';
 
@@ -6,7 +6,7 @@ const InfoPage = () => {
     const router = useRouter();
     const { slug } = router.query; 
 
-    // Determine content based on the slug
+    
     const renderContent = () => {
         if (!slug || slug.length === 0) {
             return <h1>Welcome to the Info Page</h1>; 
