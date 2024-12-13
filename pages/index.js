@@ -1,20 +1,20 @@
 import { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useRouter } from 'next/router';
-import styles from '../styles/Login.module.css';  // Import the CSS module for styling
+import styles from '../styles/Login.module.css';  
 
 export default function Home() {
   const { isAuthenticated, login, logout } = useAuth();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const router = useRouter(); // useRouter hook for navigation
+  const router = useRouter(); 
 
   const handleLogin = () => {
     // Dummy check for username and password
     if (username === 'admin' && password === 'admin123') {
       login();
-      router.push('/home'); // Navigate to the home page after login
+      router.push('/home'); 
     } else {
       setError('Invalid credentials');
     }
@@ -22,11 +22,11 @@ export default function Home() {
 
   const handleLogout = () => {
     logout();
-    router.push('/'); // Redirect back to login page
+    router.push('/'); 
   };
 
   const handleGoHome = () => {
-    router.push('/home'); // Navigate to the home page
+    router.push('/home'); 
   };
 
   return (
