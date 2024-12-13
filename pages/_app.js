@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <AuthProvider>
       <ThemeProvider>
-            <ThemeToggle /> {/* Dark mode toggle */}
+            <ThemeToggle /> 
             <Layout isLoggedIn={isLoggedIn} onLogout={handleLogout}>
                 <Component {...pageProps} onLogin={handleLogin} />
             </Layout>
