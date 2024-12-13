@@ -1,0 +1,20 @@
+/* Login.module.css */
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: var(--input-bg, #ffffff); /* Default to light theme */
+    color: var(--input-text, #000000); /* Ensure text is visible */
+  }
+  
+  /* Add dark mode styles */
+  body.dark .input {
+    background-color: #333333; /* Dark background for inputs */
+    color: #ffffff; /* Light text for visibility */
+    border: 1px solid #555555; /* Softer border for dark theme */
+  }
+  

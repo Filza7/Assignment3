@@ -1,0 +1,36 @@
+/* Layout.module.css */
+
+/* Center the search bar */
+.header {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;    /* Center content vertically */
+    position: relative;
+    padding: 20px;
+    background-color: var(--header-bg, #f0f0f0); /* Light theme default */
+  }
+  
+  /* Style the logout button */
+  .logoutButton {
+    position: absolute;
+    right: 20px; /* Place it on the right */
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logoutButton:hover {
+    background-color: #ff0000;
+  }
+  
+  /* Container for centering the search bar */
+  .searchBarContainer {
+    flex-grow: 1; /* Expand to take available space */
+    max-width: 600px;
+  }
+  
