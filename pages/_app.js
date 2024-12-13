@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
     };
 
     const handleLogout = () => {
-        setIsLoggedIn(false); // Set to false when logged out
+        setIsLoggedIn(false); 
     };
 
   return (
